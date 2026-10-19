@@ -1,0 +1,21 @@
+{
+  "name": "archon-provider-opencode-v2",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "bun test test/plugin.test.ts",
+    "build": "bun build src/main.ts --compile --outfile dist/archon-provider-opencode-v2-linux-x64",
+    "test:live": "ARCHON_LIVE=1 bun test test/plugin.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@archon/provider-contract": "file:./vendor/provider-contract",
+    "@opencode/client": "2.0.32",
+    "ajv": "8.18.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.9.3"
+  }
+}

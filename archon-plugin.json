@@ -1,0 +1,1 @@
+{"schemaVersion":1,"kind":"provider","name":"opencode-v2","description":"Foreground OpenCode V2 provider for Archon pin 9155ff15","executable":"archon-provider-opencode-v2","compatibility":{"archon":"0.11.1"}}
